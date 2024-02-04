@@ -1,0 +1,240 @@
+.header {
+  &__top {
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 0.9rem;
+
+    &__left {
+      @include mobile {
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+
+      &__text {
+        color: $text-body;
+        font-weight: 500;
+      }
+
+      &__link {
+        color: $text-title;
+        font-weight: 600;
+      }
+    }
+
+    &__right {
+      display: flex;
+      flex-wrap: nowrap;
+
+      &__item {
+        margin: 0 10px;
+        color: $text-title;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          .item__icon {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  &__middle {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+      margin-right: 1rem;
+    }
+
+    &__search {
+      @include mobile {
+        display: none;
+      }
+
+      &__text {
+        display: flex;
+        align-items: center;
+
+        .item {
+          &__text {
+            font-weight: 600;
+            color: $text-title;
+            padding: 8px 0;
+            padding-left: 1rem;
+          }
+
+          &__icon {
+            margin-left: 1rem;
+          }
+        }
+      }
+
+      .ant-input-search-button {
+        height: 47.6px;
+      }
+
+      .divider-vertical {
+        height: 15px;
+        margin: 0 1rem;
+      }
+    }
+
+    &__right {
+      display: flex;
+      align-items: center;
+      margin-left: 1rem;
+
+      &__account,
+      &__cart {
+        display: flex;
+        align-items: center;
+
+        .account,
+        .cart {
+          &__icon {
+            font-size: 2rem;
+
+            @include mobile {
+              font-size: 1.5rem;
+            }
+          }
+
+          &__text {
+            margin-left: 4px;
+
+            @include mobile {
+              display: none;
+            }
+
+            &__label {
+              font-size: 0.8rem;
+            }
+
+            &__value {
+              font-weight: 600;
+              color: $text-title;
+            }
+          }
+        }
+
+        .cart {
+          &__text {
+            margin-left: 18px;
+          }
+        }
+      }
+
+      &__favorite {
+        margin: 0 2rem;
+
+        .favorite {
+          &__icon {
+            font-size: 2rem;
+
+            @include mobile {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__tool-bar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+
+    @include mobile {
+      display: none;
+    }
+
+    &__menu {
+      display: flex;
+      align-items: center;
+      width: 270px;
+
+      &__icon {
+        font-size: 1.5rem;
+      }
+
+      &__text {
+        font-weight: 600;
+        color: $text-title;
+        padding-left: 1rem;
+      }
+    }
+
+    .clickable {
+      &:hover {
+        .header__tool-bar__menu__text {
+          color: $primary;
+        }
+      }
+    }
+
+    .divider-vertical {
+      height: 19px;
+    }
+
+    &__right {
+      padding-left: 1rem;
+      display: flex;
+      justify-content: space-between;
+      flex: 1;
+
+      .list {
+        display: flex;
+
+        .home,
+        .shop,
+        .product,
+        .page,
+        .blog,
+        .contact,
+        .buy {
+          padding: 0 1rem;
+          display: flex;
+          align-items: center;
+
+          &__text {
+            font-weight: 600;
+            color: $text-title;
+          }
+
+          &__icon {
+            padding-left: 4px;
+          }
+        }
+
+        .buy {
+          &__text {
+            color: $key-fashion;
+
+            &:hover {
+              color: $primary;
+            }
+          }
+        }
+      }
+
+      .sale {
+        display: flex;
+        align-items: center;
+
+        &__text {
+          padding-left: 8px;
+          color: $text-title;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

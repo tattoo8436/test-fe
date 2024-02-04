@@ -1,0 +1,34 @@
+.home {
+  @import "./header";
+
+  &__content {
+    background-color: $bg-body;
+    padding: 30px 0;
+
+    @include mobile {
+      padding: 15px 0;
+    }
+
+    @import "./slider";
+    @import "./product";
+  }
+
+  @import "./footer";
+}
+
+.menu-parents {
+  width: 700px;
+
+  &__item {
+    &__label {
+      font-weight: 600;
+      padding-bottom: 0.5rem;
+    }
+
+    &__value {
+      &__item {
+        margin: 2px 0;
+      }
+    }
+  }
+}

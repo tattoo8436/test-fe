@@ -1,0 +1,19 @@
+$text-body: #515d66;
+$text-title: #212529;
+$primary: #2b38d1;
+$divider: #e5e8ec;
+$key-fashion: #dc323c;
+$red: #ef262c;
+$bg-body: #f1f5f6;
+
+@mixin laptop {
+  @media only screen and (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}

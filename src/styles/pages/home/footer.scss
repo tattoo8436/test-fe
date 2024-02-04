@@ -1,0 +1,102 @@
+.footer {
+  padding-top: 56px;
+
+  @include mobile {
+    padding-top: 20px;
+  }
+
+  &__about,
+  &__information,
+  &__link,
+  &__subscribe {
+    padding-bottom: 60px;
+
+    @include mobile {
+      padding-bottom: 0px;
+    }
+
+    &__title {
+      color: $text-title;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    &__text {
+      font-weight: 500;
+      color: $text-body;
+      margin-bottom: 0.5rem;
+    }
+
+    &__phone {
+      font-weight: 500;
+      font-size: 30px;
+      color: $primary;
+      margin-bottom: 22px;
+    }
+
+    &__about {
+      text-decoration: underline;
+      font-weight: 500;
+      color: $text-title;
+      margin-bottom: 0.5rem;
+    }
+
+    &__input {
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: 16px;
+
+      &__input,
+      &__btn {
+        height: 50px;
+        border-radius: 50px;
+      }
+
+      &__btn {
+        margin-left: 10px;
+
+        span {
+          font-size: 12px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 36px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile {
+      flex-direction: column;
+      padding: 20px 0;
+    }
+
+    &__copyright {
+      font-weight: 500;
+      color: $text-body;
+
+      @include mobile {
+        padding-bottom: 1rem;
+      }
+    }
+
+    &__payment-method {
+      display: flex;
+      align-items: center;
+
+      @include mobile {
+        flex-direction: column;
+      }
+
+      &__label {
+        font-weight: 500;
+        color: $text-body;
+        padding-right: 1rem;
+      }
+    }
+  }
+}

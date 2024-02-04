@@ -1,0 +1,11 @@
+html {
+  font-size: 14px;
+}
+
+* {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+@import "./variables";
+@import "./common";
+@import "./pages/home/home";
