@@ -1,4 +1,4 @@
-import Logo from "../../assets/images/logo.svg";
+import Logo from "../../assets/images/Logo.svg";
 import IconSale from "../../assets/images/icon-sale.svg";
 import Slider1 from "../../assets/images/slider1.png";
 import Banner1 from "../../assets/images/banner1.png";
